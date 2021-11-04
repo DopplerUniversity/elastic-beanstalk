@@ -1,0 +1,22 @@
+projects:
+  - name: 'elastic-beanstalk-test'
+    description: ''
+    environments:
+      - name: 'CI-CD'
+        slug: 'cicd'
+        configs:
+          - slug: 'cicd'
+      - name: 'Production'
+        slug: 'prd'
+        configs:
+          - slug: 'prd'
+    secrets:
+      cicd:
+        AWS_ACCESS_KEY_ID: ''
+        AWS_SECRET_ACCESS_KEY: ''
+        AWS_REGION: ''
+        DOPPLER_TOKEN: ''
+      prd:
+        API_KEY: 'f7cca37d-3add-4a06-8c60-bd2fdb0be392'
+        DEBUG: 'app: server'
+        JSON: '{ "AUTH_TOKEN": "cc3ed04f-a92b-4f19-a0da-5085e66e649d" }'

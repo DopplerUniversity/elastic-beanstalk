@@ -1,0 +1,3 @@
+setup:
+  project: elastic-beanstalk-test
+  config: cicd
